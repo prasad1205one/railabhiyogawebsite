@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Railway Complaint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="login.js"></script>
+    <!-- Logo -->
+     <div class="logo1"><a href="file:///C:/Users/prasa/OneDrive/Desktop/website/index.html" target="_self"><img src="website_icon-removebg-preview.png"></a></div>
+       <!-- Header Section -->
+    <header>
+        <h1>Railway Abhiyoga Madad</h1>
+        <p>Your safety and satisfaction are our priority.</p>
+        <div class="emergencyno"> <img src="" alt="">
+            <a href="tel:138" class="numberValue"><img class="phoneicon" src="phonepng.png" alt="phone icon"><span
+                class="iconsprite"></span>138</a>
+            <p class="medical">
+                for Security / Medical Assistance
+            </p>
+
+        </div>
+    </header>
+
+
+    <!-- Navigation Menu -->
+      <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="sign-up">Sing Up</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><select class="langaugeselector">
+              <option value="en" 
+              selected="selected" >Choose Language</option>
+              <option value="eng">English</option>
+
+              <option value="hi" >
+                हिन्दी
+                </option>
+                          
+              <option value="bn" >
+              বাংলা
+              </option>
+              
+              <option value="mr" >
+              मराठी
+              </option> 
+              
+              <option value="gu" >
+              ગુજરાતી
+              </option> 
+              
+              <option value="kn" >
+              ಕನ್ನಡ
+              </option> 
+              
+              <option value="ml" >										
+              മലയാളം
+              </option> 
+              
+              <option value="pa" >
+              ਪੰਜਾਬੀ
+              </option> 
+              
+              <option value="or" >
+              ଓଡିଆ
+              </option> 
+            
+              <option value="sa" >									
+              संस्कृत
+              </option> 
+              
+              <option value="ta" >									
+              தமிழ்
+              </option> 
+              
+              <option value="te" >
+              తెలుగు
+              </option> 
+              
+              <option value="ur" >
+              اردو
+              </option> 
+              
+        </select>
+    
+        </li>
+            
+        </ul>
+    </nav>
+    
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to the Railway Madad Complaint Management</h2>
+            <p>If you have encountered any issues during your journey, please feel free to submit a complaint. We value your feedback and strive to improve our services.</p>
+        </section>
+
+        <!-- Complaint Section -->
+        <section id="submit-complaint">
+            <h2>Complaint Box</h2>
+               <hr>
+               <form action="submit_complaint" method="post">
+                <label for="name">Name &ast;</label>
+                <input type="text" id="name" name="name"  required>
+
+                <label for="mobile">Mobile No.</label>
+                <input type="tel" id="mobile" name="mobile" size="10" required>
+                
+               
+
+                <label for="train-no">Journey Details &ast;</label>
+                <input type="text" id="PNR no" name="PNR no" placeholder="PNR" required>
+
+                <label for="date"> Journey Date &ast;</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="complaint">Complaint Description &ast;</label>
+                <textarea id="complaint" name="complaint" maxlength="1000" autocomplete="on" required></textarea>
+
+                <button class="complaint">Submit</button>
+                <button class="complaint">Reset</button>
+
+            </form>
+        </section>
+
+        <!-- Check Complaint Status Section -->
+        <section id="check-status">
+            <h2>Check Complaint Status</h2>
+              <hr>
+            <form action="check_status.php" method="get">
+                <label for="complaint-id">Enter Complaint ID &ast;</label>
+                <input type="text" id="complaint-id" name="complaint_id" required>
+
+                <button class="complaint">Check Status</button>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <p>Copyright ©2024 CYBER RAILBOT. All Rights
+            Reserved.</p>
+        <p>Email: support@railcomplaints.com</p>
+    </footer>
+</body>
+</html>
+
+   

@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Logo Styles */
+  
+  .logo1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px; 
+    height: auto;
+    background-color: #fff; 
+    padding: 5px;
+  }
+  
+  .logo1 img {
+    max-width: 130%;
+    max-height: 120%;
+    object-fit: contain;
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color:white;
+    padding: 40px 20px;
+    text-align: center;
+    color: royalblue;
+    /* margin-right: 50px; */
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    position: relative;
+   
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+  }
+ /* Emergency Button value */
+  .emergencyno{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    text-align: right;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 30px; 
+  }
+
+.emergencyno p.medical {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+  vertical-align: 7px;
+}
+
+.emergencyno .numberValue {
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconsprite {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.emergencyno .phoneicon{
+  width: 25px;
+  height: 25px;
+  margin-right: -20px;
+}
+
+.numberValue  {
+  animation-name: color_change;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: color_change 2s infinite alternate;
+  -moz-animation: color_change 2s infinite alternate;
+  -ms-animation: color_change 2s infinite alternate;
+  -o-animation: color_change 2s infinite alternate;
+  animation: color_change 2s infinite alternate;
+}
+
+@-webkit-keyframes color_change {
+  from {
+      background-color: #dd1712;
+  }
+
+  to {
+      background-color: #df1b1b;
+  }
+}
+
+@-moz-keyframes color_change {
+  from {
+      background-color: #dd1712;
+  }
+
+  to {
+      background-color: #df1b1b;
+  }
+}
+
+@-ms-keyframes color_change {
+  from {
+      background-color: #dd1712;
+  }
+
+  to {
+      background-color: #df1b1b;
+  }
+}
+
+@-o-keyframes color_change {
+  from {
+      background-color: #dd1712;
+  }
+
+  to {
+      background-color: #df1b1b;
+  }
+}
+
+@keyframes color_change {
+  from {
+      background-color: #930b3e;
+  }
+
+  to {
+      background-color:  #df1b1b;
+  }
+}
+.emergencyno p.medical{
+margin-top: 15px;
+
+}
+  /* Navigation Menu Styles */
+  
+  nav {
+    background-color: #1a3d7a;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  nav a:hover {
+    color: royalblue;
+    background-color: white;
+   
+  }
+
+  .langaugeselector {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a3d7a;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .langaugeselector:hover {
+    color: royalblue;
+    background-color:white;
+  }
+  
+  .langaugeselector option {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+   
+  }
+  
+  /* Main Content Styles */
+  
+  main {
+    background-image: url("body-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  section {
+    
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+   
+  }
+
+  #home{
+    color: #1258d1;
+    background-color: none;
+    box-shadow: none;
+
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  
+  form {
+    padding: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="tel"], input[type="date"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .complaint{
+    border: 0;
+  line-height: 2;
+  padding: 0 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(21, 24, 201);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+
+  }
+
+  .complaint:hover{
+    background-color: rgb(54, 94, 214);
+  }
+
+  .complaint:active{
+    box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: royalblue;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+  
+  footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .container select{
+    color: black;
+    background-color:white;
+   
+    
+
+  }
+  .container {
+    border-radius: 10px solid black;
+  }
